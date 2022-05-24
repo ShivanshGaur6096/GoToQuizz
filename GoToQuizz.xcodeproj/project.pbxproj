@@ -16,6 +16,9 @@
 		20B3FC68283D183F0049F706 /* GoToQuizzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B3FC67283D183F0049F706 /* GoToQuizzTests.swift */; };
 		20B3FC72283D183F0049F706 /* GoToQuizzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B3FC71283D183F0049F706 /* GoToQuizzUITests.swift */; };
 		20B3FC74283D183F0049F706 /* GoToQuizzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B3FC73283D183F0049F706 /* GoToQuizzUITestsLaunchTests.swift */; };
+		20B3FC8A283D1DD30049F706 /* AccessibilityProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B3FC89283D1DD30049F706 /* AccessibilityProtocols.swift */; };
+		20B3FC8C283D1E630049F706 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B3FC8B283D1E630049F706 /* QuestionModel.swift */; };
+		20B3FC8F283D1EB10049F706 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B3FC8E283D1EB10049F706 /* AppConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		20B3FC6D283D183F0049F706 /* GoToQuizzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoToQuizzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B3FC71283D183F0049F706 /* GoToQuizzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToQuizzUITests.swift; sourceTree = "<group>"; };
 		20B3FC73283D183F0049F706 /* GoToQuizzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToQuizzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20B3FC89283D1DD30049F706 /* AccessibilityProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityProtocols.swift; sourceTree = "<group>"; };
+		20B3FC8B283D1E630049F706 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		20B3FC8E283D1EB10049F706 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		20B3FC4F283D183C0049F706 /* GoToQuizz */ = {
 			isa = PBXGroup;
 			children = (
+				20B3FC87283D1DA20049F706 /* Common */,
 				20B3FC86283D19C80049F706 /* Delegate */,
 				20B3FC84283D199E0049F706 /* MainScreen */,
 				20B3FC83283D19470049F706 /* Resources */,
@@ -127,6 +134,7 @@
 		20B3FC80283D19210049F706 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				20B3FC8B283D1E630049F706 /* QuestionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +181,31 @@
 				20B3FC50283D183C0049F706 /* AppDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		20B3FC87283D1DA20049F706 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				20B3FC8D283D1E950049F706 /* Constants */,
+				20B3FC88283D1DB40049F706 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		20B3FC88283D1DB40049F706 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				20B3FC89283D1DD30049F706 /* AccessibilityProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		20B3FC8D283D1E950049F706 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				20B3FC8E283D1EB10049F706 /* AppConstant.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B3FC8A283D1DD30049F706 /* AccessibilityProtocols.swift in Sources */,
 				20B3FC55283D183C0049F706 /* ViewController.swift in Sources */,
 				20B3FC51283D183C0049F706 /* AppDelegate.swift in Sources */,
+				20B3FC8F283D1EB10049F706 /* AppConstant.swift in Sources */,
 				20B3FC53283D183C0049F706 /* SceneDelegate.swift in Sources */,
+				20B3FC8C283D1E630049F706 /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
